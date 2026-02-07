@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration Quotes | Elevate Your Soul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+
+    <main class="app-container">
+        <header>
+            <h1 class="logo">Inspire.</h1>
+        </header>
+
+        <section class="quote-card-wrapper">
+            <div class="quote-card" id="quoteCard">
+                <div class="quote-content">
+                    <span class="quote-icon-top">“</span>
+                    <p id="quoteText" class="quote-text">Loading inspiration...</p>
+                    <span class="quote-icon-bottom">”</span>
+                </div>
+                <div class="quote-footer">
+                    <p id="quoteAuthor" class="quote-author"></p>
+                    <div class="tag-container" id="tagContainer"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="controls">
+            <button id="newQuoteBtn" class="btn btn-primary">
+                <span class="btn-text">New Inspiration</span>
+                <span class="btn-shine"></span>
+            </button>
+            <div class="secondary-actions">
+                <button id="copyBtn" class="btn btn-secondary" title="Copy to Clipboard">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                </button>
+                <button id="shareBtn" class="btn btn-secondary" title="Share">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="18" cy="5" r="3"></circle>
+                        <circle cx="6" cy="12" r="3"></circle>
+                        <circle cx="18" cy="19" r="3"></circle>
+                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <div id="toast" class="toast">Copied to clipboard!</div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

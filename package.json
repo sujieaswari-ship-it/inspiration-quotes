@@ -1,0 +1,12 @@
+{
+  "name": "inspiration-quotes",
+  "version": "1.0.0",
+  "description": "A premium inspiration quotes web app",
+  "main": "script.js",
+  "scripts": {
+    "dev": "npx -y serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
